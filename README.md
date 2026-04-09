@@ -15,3 +15,15 @@ This project uses a BBC micro:bit v2 (and a KS0361 breakout board) and a Tetrapa
 ## Usage
 
 The script as written maps the accelerometer's x, y, and z dimensions onto two outputs each. The last two outputs reflect the temperature and restricted to positive voltage. They are intended to incorporate a bit of the surrounding environment into your performance.
+
+## Background & Methodology
+
+This project adds motion control to a modular setup by connecting a [BBC micro:bit v2](https://microbit.org/get-started/what-is-the-microbit/) to an [Intellijel Tetrapad](https://intellijel.com/shop/eurorack/tetrapad/) using the Inter-Integrated Circuit (I<sup>2</sup>C) protocol.
+
+I developed this code using the [micro:bit Python Editor](https://python.microbit.org/v/3) and flashed [micromod.hex](./micromod.hex) to the micro:bit using direct connection over Chrome.
+
+This project translates the micro:bit's accelerometer into a range of values between -8 and +8 volts.
+
+## Roadmap
+
+- Add code sample for trigger signals (either high or low rather than continuous)
